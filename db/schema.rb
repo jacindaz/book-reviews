@@ -20,9 +20,9 @@ ActiveRecord::Schema.define(version: 20130910175339) do
   end
 
   create_table "books", force: true do |t|
-    t.string   "title",      null: false
-    t.datetime "published",  null: false
-    t.integer  "author_id",  null: false
+    t.string   "title",        null: false
+    t.datetime "published_at", null: false
+    t.integer  "author_id",    null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
