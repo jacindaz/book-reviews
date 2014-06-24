@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
   has_many :reviews
 
-  validates_presence_of :username
+  validates :username, presence: true
 end
